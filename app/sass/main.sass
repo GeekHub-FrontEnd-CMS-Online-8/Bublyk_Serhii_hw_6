@@ -1,0 +1,652 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section
+	display: block
+
+html
+	scroll-behavior: smooth
+body
+	line-height: 1
+
+ol, ul
+	list-style: none
+
+blockquote, q
+	quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after
+
+	content: none
+
+/* Don't kill focus outline for keyboard users: http://24ways.org/2009/dont-lose-your-focus */
+a:hover, a:active
+	outline: none
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+@import url('https://fonts.googleapis.com/css?family=Asap:400,400i,500,500i,600,600i,700,700i')
+$font: Asap
+
+body, #wrapper, button
+	max-width: 100%
+	font-family: $font
+	margin: 0 auto
+	color: #6f6f6f
+
+div, input, textarea, input[type=submit]
+	box-sizing: border-box
+
+
+header,footer
+	min-width: 1170px
+
+header
+	margin: 0 auto
+	background: #e2e2e2
+	height: 771px
+	.container
+		flex-direction: row
+		padding-top: 30px
+		padding-bottom: 16px
+	p
+		font-size: 22px
+		margin-top: 20px
+
+.container, .hero, ul, .name, .service_list, .block,
+.container_portfolio, .info, #Testimonials .sub_container, .carousel-wrapper
+	display: flex
+
+.container, .hero, .container_portfolio
+	max-width: 1170px
+	margin: 0 auto
+	text-align: center
+
+.container
+	padding:
+		top: 125px
+		bottom: 125px
+	flex-direction: column
+
+.logo
+	width: 81px
+	height: 46px
+
+nav
+	ul
+		flex-flow: row wrap
+		justify-content: left
+		margin-left: 579px
+
+	li
+		padding-left: 40px
+
+	a
+		color: #4d4d4d
+		text-decoration: none
+		text-transform: uppercase
+		font-size: 16px
+		padding-bottom: 8px
+
+	a:hover
+		border-bottom: 2px #878787 solid
+
+button
+	border:
+		width: 1px
+		color: rgb(77, 77, 77)
+		style: solid
+	background-color: transparent
+	text-transform: uppercase
+	font-size: 16px
+	font-weight: bold
+	height: 50px
+	margin:
+		top: 30px
+		right: 20px
+	&:hover
+		background-color: rgb(255, 255, 255)
+		box-shadow: 0.0px 18px 26.68px 2.32px rgba(0, 0, 0, 0.1)
+
+.buttons button
+	width: 160px
+
+.hero, #About .container
+	justify-content: space-between
+
+.sub_container
+	flex-wrap: wrap
+	flex-direction: column
+	justify-content: center
+	align-items: flex-start
+	h1
+		font-size: 90px
+		padding-top: 175px
+		color: #4d4d4d
+
+	img
+		align-items:
+		margin-top: 15px
+
+h2
+	font-size: 46px
+	text-transform: uppercase
+	text-align: center
+
+.hidden
+	position: relative
+	margin-bottom: 20px
+
+	p
+		font-size: 22px
+		padding-bottom: 10px
+		text-transform: uppercase
+		letter-spacing: 5px
+		visibility: hidden
+
+.hidden:before
+	content : ""
+	position: absolute
+	left: 555px
+	bottom: 0
+	height: 1px
+	width: 4.5%
+	border-bottom:
+		style: solid
+		color: #6f6f6f
+
+#About
+	.container
+		flex-direction: row
+
+	h2, p
+		text-align: left
+
+	.text
+		width: 469px
+
+		p
+			font-size: 16px
+			line-height: 1.5
+
+	button
+		width: 243px
+		color: #4d4d4d
+
+	.sub_container
+		text-align: left
+
+	.hidden:before
+		left: 0
+		width: 11%
+
+.service_list
+	width: 1170px
+	height: 400px
+	padding-top: 17px
+	justify-content: space-around
+	align-items: center
+	flex-direction: row
+	flex-wrap: wrap
+
+.block
+	width: 360px
+	height: 200px
+	justify-content: center
+	align-items: center
+	flex-direction: column
+
+#Services
+	.service_1
+		width: 77px
+		height: 77px
+	.service_2
+		width: 76px
+		height: 62px
+	.service_3
+		width: 67px
+		height: 65px
+	.service_4
+		width: 90px
+		height: 75px
+	.service_5
+		width: 57px
+		height: 81px
+	.service_6
+		width: 76px
+		height: 76px
+
+h3
+	font-size: 24px
+	padding-top: 17px
+
+#Skills
+	img
+		padding-top: 60px
+		width: 995px
+		height: 414px
+
+#Portfolio
+	.container_portfolio
+		padding-top: 45px
+		justify-content: center
+		align-items: center
+		flex-direction: row
+		flex-wrap: wrap
+
+	.block
+		width: 354px
+		height: 305px
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		margin:
+			top: 30px
+			right: 30px
+		&:hover
+			box-shadow: 0.0px 0.0px 36.75px 12.25px rgba(0, 0, 0, 0.15)
+
+	img
+		width: 354px
+		height: 305px
+	button
+		border: none
+		width: 190px
+
+#Testimonials
+	.container
+		align-items: center
+
+	.border
+		border: 1px #333333 solid
+		width: 955px
+		height: 349px
+		margin-top: 60px
+
+
+	.sub_container
+		padding-top: 86px
+
+
+		flex-direction: row
+		justify-content: center
+		align-items: center
+
+
+
+	.hidden:before
+		left: 54px
+		width: 29%
+
+	img
+			width: 159px
+			height: 159px
+
+	.info
+		width: 571px
+		height: 185px
+		flex-direction: column
+		align-items: flex-start
+		justify-content: flex-start
+		margin-left: 30px
+		text-transform: uppercase
+
+	h4, h5
+		color: #373737
+
+	h4
+		font-size: 30px
+
+	h5
+		font:
+			size: 12px
+			style: italic
+		padding:
+			top: 5px
+			bottom: 15px
+
+	p
+		text-align: left
+		font-size: 16px
+		line-height: 1.5
+
+#Fact
+	.container
+		flex-direction: row
+
+	p
+		font-size: 22px
+		text-transform: uppercase
+
+	h6
+		font-size: 24px
+		font-weight: 600
+		padding:
+			top: 31px
+			bottom: 8px
+
+	.block
+		justify-content: flex-end
+
+	.fan_fact1
+		width: 98px
+		height: 98px
+
+	.fan_fact2
+		width: 77px
+		height: 77px
+
+	.fan_fact3
+		width: 64px
+		height: 74px
+
+	.fan_fact4
+		width: 70px
+		height: 82px
+
+footer
+	margin: 0 auto
+	background: url("../img/footer_bg.jpeg")
+		repeat: no-repeat
+		position: center
+	background-size: cover
+	min-height: 787px
+
+	h2
+		color: white
+		letter-spacing: 5px
+		padding-top: 40px
+		padding-bottom: 70px
+
+	ul
+		justify-content: center
+
+	li
+		padding:
+			right: 30px
+			bottom: 30px
+
+	.ul_2
+		display: flex
+		flex-direction: column
+
+input, textarea
+	font-family: $font
+	font-size: 16px
+	padding-left: 12px
+	color: #4d4d4d
+
+input
+	width: 370px
+	height: 57px
+
+textarea
+	width: 768px
+	height: 207px
+	padding-top: 27px
+
+input[type=submit]
+	width: 123px
+	height: 50px
+	padding-right: 20px
+	background: #ccc url('../img/send-button.png')
+		repeat: no-repeat
+		position: 78px
+
+hr
+	width: 1170px
+	height: 1px
+	margin-top: 27px
+	background-color: white
+	border: none
+
+footer
+	.container
+		padding-bottom: 30px
+	h2
+		padding-top: 0
+
+	.container_soc
+		width: 1170px
+		padding-top: 20px
+		padding-bottom: 20px
+		h6
+			color: white
+			font-size: 16px
+			font-weight: 400
+			margin-top: 6px
+			margin-left: 290px
+			float: left
+
+	.hidden:before
+		border-bottom:
+			color: white
+
+	.social
+		a
+			text-align: center
+			width: 27px
+			height: 27px
+			float: left
+			background:  #FFFFFF
+			border: transparent
+			box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1)
+			color: #575757
+			margin-left: 5px
+		.fa-linkedin,.fa-google-plus,.fa-twitter,.fa-facebook, .fa-behance, .fa-dribbble, .fa-behance
+			margin-top: 6px
+
+.google-pluse a:hover
+	background: #DD4B39
+	color: #fff
+
+	box-shadow: 1px 1px 7px 1px #DD4B39
+	transition: 0.5s
+
+.twitter a:hover
+	background: #00acee
+	color: #fff
+
+	box-shadow: 1px 1px 7px 1px #00acee
+	transition: 0.5s
+
+.linkedin a:hover
+	background: #0e76a8
+	color: #fff
+
+	box-shadow: 1px 1px 7px 1px #0e76a8
+	transition: 0.5s
+
+.facebook a:hover
+	background: #3b5998
+	color: #fff
+	box-shadow: 1px 1px 7px 1px #3b5998
+	transition: 0.5s
+
+.dribbble a:hover
+	background: #f171a6
+	color: #fff
+	box-shadow: 1px 1px 7px 1px #f171a6
+	transition: 0.5s
+
+.behance a:hover
+	background: #0056ff
+	color: #fff
+	box-shadow: 1px 1px 7px 1px #0056ff
+	transition: 0.5s
+
+//.aside
+//		position: fixed
+//		display: block
+//		width: 45px
+//		height: 41px
+//		margin-left: 500px
+//		a
+//			text-align: center
+//			width: 45px
+//			height: 41px
+//			float: left
+//			background: #FFFFFF
+//			border: transparent
+//			box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1)
+//			color: #575757
+//			margin-left: 5px
+//		.fa-angle-up
+//				margin-top: 5px
+//.up a:hover
+//	box-shadow: 1px 1px 7px 1px #575757
+//	transition: 0.5s
+
+#upbutton
+	background: url("../img/down_icon.jpeg") no-repeat top left
+	height: 45px
+	width: 41px
+	bottom: 30px
+	right: 250px
+	cursor: pointer
+	display: none
+	position: fixed
+	z-index: 999
+
+.carousel-items, .carousel-labels
+	margin: 0
+	padding: 0
+	list-style: none
+	display: block
+
+.carousel-item
+	display: block
+	float: left
+	padding-bottom: 40px
+
+.carousel-wrapper
+	width: 100%
+	position: relative
+	padding-bottom: 30%
+	background-color: #eee
+	overflow: hidden
+
+.carousel-items
+	width: 300%
+	height: 100%
+	position: absolute
+	left: 0
+	top: 0
+	z-index: 1
+	transition: left .5s ease-out
+	-o-transition: left .5s ease-out
+	-ms-transition: left .5s ease-out
+	-moz-transition: left .5s ease-out
+	-webkit-transition: left .5s ease-out
+
+.carousel-item
+	width: 33.33333333%
+	height: 100%
+
+	background: #FFFFFF
+
+.carousel-labels
+	position: absolute
+	z-index: 2
+	left: 0
+	bottom: 0px
+	height: 20px
+	width: 100%
+	padding: 10px 0
+	text-align: center
+
+.carousel-selector
+	display: none
+
+.carousel-label
+	display: inline-block
+
+.carousel-label label
+	width: 13px
+	height: 13px
+	border: 1px #333333 solid
+	margin-top: 15px
+
+	background-color: white
+	display: block
+	cursor: pointer
+
+#slide1:checked ~ .carousel-items
+	left: 0
+
+#slide1:checked ~ .carousel-labels .carousel-label:nth-child(1) label
+	background-color: black
+
+#slide2:checked ~ .carousel-items
+	left: -100%
+
+#slide2:checked ~ .carousel-labels .carousel-label:nth-child(2) label
+	background-color: black
+
+#slide3:checked ~ .carousel-items
+	left: -200%
+
+#slide3:checked ~ .carousel-labels .carousel-label:nth-child(3) label
+	background-color: black
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
